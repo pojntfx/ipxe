@@ -1572,4 +1572,3 @@ clean :
 
 veryclean : clean
 	$(RM) -r $(VERYCLEANUP)
-CFLAGS          += $(WORKAROUND_CFLAGS) $(EXTRA_CFLAGS) -fno-pie
