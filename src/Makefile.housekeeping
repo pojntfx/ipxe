@@ -1572,4 +1572,8 @@ clean :
 
 veryclean : clean
 	$(RM) -r $(VERYCLEANUP)
+
+# Patch to enable pcbios builds
+ifeq ($(BIN_PLATFORM), pcbios)
 CFLAGS          += $(WORKAROUND_CFLAGS) $(EXTRA_CFLAGS) -fno-pie
+endif
